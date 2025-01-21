@@ -42,10 +42,10 @@ def barang_masuk ():
 
 def barang_keluar ():
     barang = input("Masukkan nama barang (x untuk keluar): ")
-    if barang not in inventaris:
-        print("Barang tidak ditemukan.")
+    if barang == "x":
         return
-    elif barang == "x":
+    elif barang not in inventaris:
+        print("Barang tidak ditemukan.")
         return
     else:
         jumlah = int(input("Jumlah barang yang keluar: "))
