@@ -101,7 +101,7 @@ while True:
         print("1. Tambah Barang")
         print("2. Hapus Barang")
         print("3. Tambah Stok")
-        print("4. Laporan Barang")
+        print("4. Laporan Inventaris")
         print("5. Exit")
 
         choice = input("Pilih Menu (1/2/3/4/5): ")
