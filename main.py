@@ -41,9 +41,11 @@ def barang_masuk ():
                 print("Format tanggal salah. Gunakan format yyyy-mm-dd")    
 
 def barang_keluar ():
-    barang = input("Masukkan nama barang: ")
+    barang = input("Masukkan nama barang (x untuk keluar): ")
     if barang not in inventaris:
         print("Barang tidak ditemukan.")
+        return
+    elif barang == "x":
         return
     else:
         jumlah = int(input("Jumlah barang yang keluar: "))
