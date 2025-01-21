@@ -84,8 +84,8 @@ def tambah_stok ():
     else:
         print("Barang tidak tersedia.")
     
-def lihat_inventaris ():
-    print("\nDaftar Inventaris Barang:")
+def laporan_barang ():
+    print("\nLaporan Barang:")
     if not inventaris:
         print("Inventaris kosong.")
         return
@@ -113,7 +113,7 @@ while True:
         elif choice == "3":
             tambah_stok()
         elif choice == "4":
-            lihat_inventaris()
+            laporan_barang()
         elif choice == "5":
             print("Program Selesai. Terima kasih!")
             break
