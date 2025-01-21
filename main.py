@@ -35,7 +35,7 @@ def barang_masuk ():
                     print("Tanggal barang masuk tidak boleh di masa depan.")
                 else:
                     inventaris[barang] = {'jumlah': jumlah, 'tanggal': tanggal}
-                    print(f"\n{barang} sejumlah {jumlah} berhasil ditambahkan pada {tanggal}.")
+                    print(f"\n{barang} sejumlah {jumlah} unit berhasil ditambahkan pada {tanggal}.")
                     
             except ValueError:
                 print("Format tanggal salah. Gunakan format yyyy-mm-dd")    
