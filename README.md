@@ -1,1 +1,1 @@
-Simple Inventory Sistem with Python wihtout using Database
+Simple Inventory Sistem with Python without using Database
