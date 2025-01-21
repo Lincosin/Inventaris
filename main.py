@@ -3,7 +3,7 @@ from datetime import datetime
 inventaris = {}
 
 def barang_masuk ():
-    barang = input("Masukkan nama barang (x untuk keluar): ").lower()
+    barang = input("Masukkan nama barang (x untuk keluar): ")
     if not barang:
         print("Nama barang harus diisi.")
         return
@@ -41,7 +41,7 @@ def barang_masuk ():
                 print("Format tanggal salah. Gunakan format yyyy-mm-dd")    
 
 def barang_keluar ():
-    barang = input("Masukkan nama barang (x untuk keluar): ").lower()
+    barang = input("Masukkan nama barang (x untuk keluar): ")
     if barang == "x":
         return
     elif barang not in inventaris:
@@ -62,7 +62,7 @@ def barang_keluar ():
             
 
 def tambah_stok ():
-    barang = input("Masukkan nama barang (x untuk keluar): ").lower()
+    barang = input("Masukkan nama barang (x untuk keluar): ")
     if barang in inventaris:
             try:
                 jumlah = int(input(f"Tambahkan jumlah unit untuk {barang} : "))
