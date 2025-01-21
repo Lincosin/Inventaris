@@ -73,20 +73,20 @@ def tambah_stok ():
                     print("Jumlah barang harus lebih dari 0.")
             except ValueError:
                 print("Input gagal, silahkan masukkan angka untuk jumlah.")
+    elif barang == "x":
+        return
     elif barang not in inventaris:
         pilih= input("Barang tidak ditemukan di inventaris. Ingin menambahkan barang baru? (y/n) ")
         if pilih == "y":
             barang_masuk()
         else:
             return
-    elif barang == "x":
-        return
     else:
         print("Barang tidak tersedia.")
     
 def laporan_barang ():
     print("\nLaporan Barang:")
-    if barang not in inventaris:
+    if not inventaris:
         print("Inventaris kosong.")
         return
     else:
