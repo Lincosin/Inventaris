@@ -90,10 +90,14 @@ def laporan_barang ():
         print("Inventaris kosong.")
         return
     else:
-        for barang, details in inventaris.items():
-            jumlah = details['jumlah']
-            tanggal = details['tanggal']
-            print(f"{barang} masuk ke gudang sebanyak {jumlah} unit pada {tanggal}")
+        print("-" * 60)
+        print(f"{'Nama Barang':<30} {'Jumlah':<15} {'Tanggal Masuk':<25}")
+        print("-" * 60)
+        
+        # Isi tabel
+        for barang, info in inventaris.items():
+            print(f"{barang:<30} {str(info['jumlah']) + ' unit':<15} {info['tanggal']:<25}")
+        print("-" * 60)
 
 
 while True:
